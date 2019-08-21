@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="magiccube.RndPassFxmlController">
+    
+    <children>
+        
+      <Label layoutX="55.0" layoutY="4.0" prefHeight="25.0" prefWidth="240.0" text="Выберите наборы символов, которые" textAlignment="CENTER" />
+      <Label layoutX="87.0" layoutY="19.0" prefHeight="25.0" prefWidth="176.0" text="необходимо использовать:" textAlignment="CENTER" />
+      <CheckBox fx:id="checkBox_az" layoutX="15.0" layoutY="48.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" selected="true" text="a-z" />
+      <CheckBox fx:id="checkBox_AZ" layoutX="15.0" layoutY="76.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" selected="true" text="A-Z" />
+      <CheckBox fx:id="checkBox_aya" layoutX="80.0" layoutY="48.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" text="а-я" />
+      <CheckBox fx:id="checkBox_AYA" layoutX="80.0" layoutY="76.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" text="А-Я" />
+      <CheckBox fx:id="checkBox_09" layoutX="145.0" layoutY="48.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="58.0" selected="true" text="0-9" />
+      <CheckBox fx:id="checkBox_SpecShar" layoutX="145.0" layoutY="76.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="170.0" text="\%, *, ),?, @, (, #, $, ~" />
+      <Label layoutX="15.0" layoutY="111.0" text="Кол-во символов:" />
+      <TextField fx:id="countNumber" alignment="CENTER" layoutX="129.0" layoutY="107.0" prefHeight="26.0" prefWidth="43.0" text="8" />
+      <TextField fx:id="textFieldResult" editable="false" layoutX="15.0" layoutY="139.0" prefHeight="26.0" prefWidth="189.0" />
+        <Button id="my-button" fx:id="button" defaultButton="true" layoutX="207.0" layoutY="137.0" onAction="#getRandomPassword" prefHeight="29.0" prefWidth="95.0" styleClass="background" stylesheets="@DarkTheme.css" text="Создать" textAlignment="CENTER" />
+      <Button layoutX="11.0" layoutY="7.0" mnemonicParsing="false" onAction="#goMenu" prefHeight="25.0" prefWidth="25.0" text="&lt;-">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
